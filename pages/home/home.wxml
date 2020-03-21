@@ -1,0 +1,19 @@
+<!--pages/home/home.wxml-->
+<!-- 展示轮播图 -->
+<w-swiper list="{{banner}}"/>
+<!-- 展示推荐数据 -->
+<recommend recomm="{{recommend}}" bind:imageload="hanleImageload"/>
+<!-- 展示本周流行 -->
+<view class="popular">
+ <image src="/assets/home/popular_bg.jpg" />
+</view>
+<!-- 展示tab-control组件 -->
+<tab-control bind:itemclick="itemclick"
+ id="tab-control"
+ class="{{isTabFixed ? 'fixed': ''}}"
+ />
+<tab-control bind:itemclick="itemclick" wx:if="{{isTabFixed}}"/>
+<!-- 展示数据 -->
+<goods good="{{goods[currenttype].list}}" />
+<!-- 回到顶部按钮 -->
+<back-top wx:if="{{isShow}}"/>

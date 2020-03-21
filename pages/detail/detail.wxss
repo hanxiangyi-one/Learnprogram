@@ -1,0 +1,7 @@
+/* pages/detail/detail.wxss */
+.swiper{
+  height: calc(100% - 120rpx);
+}
+.d-swiper swiper{
+  height: 600rpx;
+}

@@ -1,0 +1,18 @@
+<!--pages/detail/childCpns/w-commentinfo/w-comment-info.wxml-->
+<view class="comment-info">
+  <view class="comment-title">
+    <view>用户评价</view>
+    <view>更多</view>
+  </view>
+  <view class="comment-user">
+  <image src="{{comment.user.avatar}}"></image>
+  <text>{{comment.user.uname}}</text>
+  </view>
+  <view class="comment-content">
+    <view>{{comment.content}}</view>
+  </view>
+  <view class="comment-created">
+      <view>{{comment.created}}</view>
+      <view>{{comment.style}}</view>
+  </view>
+</view>

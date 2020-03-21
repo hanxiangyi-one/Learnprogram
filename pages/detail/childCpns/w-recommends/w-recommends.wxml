@@ -1,0 +1,7 @@
+<!--pages/detail/childCpns/w-recommends/w-recommends.wxml-->
+<view>
+   <view class='header'>商品推荐</view>
+   <block class='content'>
+     <w-goods good="{{recommend}}"/>
+   </block>
+</view>

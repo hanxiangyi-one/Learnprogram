@@ -1,0 +1,11 @@
+<!--pages/home/childCpns/tab-control/tab-control.wxml-->
+<view class="control">
+  <block wx:for="{{control}}" wx:key='index'>
+    <view class='control-item {{ currentindex === index ? "active" : ""}}'
+    bindtap="onclick"
+    data-index="{{index}}"
+    >
+   <text>{{item}}</text>
+    </view>
+  </block>
+</view>

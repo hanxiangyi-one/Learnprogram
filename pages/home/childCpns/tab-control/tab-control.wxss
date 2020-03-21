@@ -1,0 +1,20 @@
+/* pages/home/childCpns/tab-control/tab-control.wxss */
+.control{
+  display: flex;
+  margin-bottom: 16rpx;
+  background: #fff;
+  padding-bottom: 10rpx;
+}
+.control-item{
+  text-align: center;
+ 
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 32rpx;
+  flex: 1;
+}
+.control-item.active text{
+  color:#ff5777;
+  padding: 17rpx 16rpx;
+  border-bottom: 5rpx solid #ff5777;
+}

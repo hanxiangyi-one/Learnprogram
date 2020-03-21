@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "w-check-icon":"../../../commponents/w-check-icon/w-check-icon"
+  }
+}

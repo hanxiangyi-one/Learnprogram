@@ -1,0 +1,21 @@
+<!--pages/detail/detail.wxml-->
+<scroll-view class="swiper" scroll-y>
+<!-- 轮播图 -->
+<w-swiper list="{{topImage}}"class="d-swiper" ></w-swiper>
+<!-- 标题价格折扣 -->
+<w-base-info base="{{baseInfo}}"></w-base-info>
+<!-- 店家信息 -->
+<w-shop-info shop="{{shopInfo}}" />
+<!-- 详情数据 -->
+<w-detail-info detail= "{{detailInfo}}"/>
+<!-- 衣服尺寸 -->
+<w-param-info param="{{paramInfo}}" />
+<!-- 用户评价 -->
+<w-comment-info comment="{{commentInfo}}" />
+<!-- 推荐数据 -->
+<w-recommends recommend="{{recommends}}" />
+<!-- 返回顶部 -->
+<back-top wx:if="{{isShow}}"></back-top>
+</scroll-view>
+<!-- 加入购物车 -->
+<w-cart-info bind:addcart="onAddCart"/>
